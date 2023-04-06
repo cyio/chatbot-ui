@@ -289,6 +289,11 @@ const Home: React.FC<HomeProps> = ({
   // FETCH MODELS ----------------------------------------------
 
   const fetchModels = async (key: string) => {
+    setModels([{
+      "id": "gpt-3.5-turbo",
+      "name": "GPT-3.5"
+    }])
+    return
     const error = {
       title: t('Error fetching models.'),
       code: null,
